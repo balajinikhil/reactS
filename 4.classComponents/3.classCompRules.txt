@@ -1,0 +1,14 @@
+React Class Component
+	-Must be a js class (proptypal inheretence)
+	-Must extend React.Component
+	-Must define render method which return jsx
+
+
+
+
+class App extends React.Component{
+	render(){
+		}
+}
+
+ React.Componet	allows to get functionality to our App method	 

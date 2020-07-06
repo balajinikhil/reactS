@@ -1,0 +1,30 @@
+Seasons App
+-Need to ge users physical location
+-Need to determine the current month
+-Need to change text and styling based on location + month
+
+App - determine loction+month
+|
+|
+SeasonDisplay - Shows different text/icon based on props
+
+Geolocation API
+MDN documentation
+
+window.navigator.geolocation.getCurrentPosition(sucessCb, errCb)
+sucesscb = (position)=>{}
+errCb = (err)=>{}
+
+
+if err
+... sensors > geolocation >setLocation
+
+
+
+
+
+
+
+
+
+
