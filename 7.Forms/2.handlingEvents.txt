@@ -1,0 +1,25 @@
+Controlled
+	-value of the dom will be undercontroll of react state
+
+Uncontrolled
+	-Only html element is under controll of the react state
+
+this
+	what? - points to the instance which is creating it
+	How? - the value is determined by instance which is created it.
+
+How to overcome?
+	-Binding inside a constructor
+	this.func = this.fun.bind(this);
+
+	-Arrow function
+	this points to parent scope in arrow function
+	
+	-Func inside jsx only
+	(e)=>this.executeFUnc(e)
+
+
+Comunicating Child to Parent
+	Send func as props and return value to that func in child
+
+		
