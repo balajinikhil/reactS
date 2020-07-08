@@ -1,0 +1,41 @@
+-Feedback from the user
+-Fetch data from outside API or server
+-List of records
+
+
+App Challenges
+	-Need to get a search term for user
+	-Need to use that search term to make a request to an outside API and fetch data
+	-Need to take the fetched images and show them on the screen in a list
+
+Components
+	-SearchBar
+	-ImageList
+
+
+Styling
+ d-container
+	-SearchBar
+		d-ui segemt
+		  f-ui form
+		    d-field
+		      i-onChange
+
+//search type 
+onInputChange(){
+
+}
+
+onTagAction - how to define event handlers
+
+
+Uncontrolled vs Controlled
+
+	Flow -
+		-user types input
+		-callback gets invoke
+		-we call setState with new value
+		-component rerenders 
+		-input is told when it's value is (coming from state)
+
+Difference
