@@ -1,0 +1,16 @@
+1. Action creator
+    A js function which creates a js object with type and payload as properties,
+        type - consits of what type of action it does [Must be all CAPS and UNDERSCORE by convention]
+        payload - consits of data
+
+2.Action 
+    It is a simple js object which holds type and payload 
+
+3.Dispatch 
+    It is responsible for taking the action and store data to the reducers for processing
+
+4.Reducers
+    A js function which has which processes action and performs required execution and returns the modified data to state
+
+5.State
+    Is like a central data which holds all the data 

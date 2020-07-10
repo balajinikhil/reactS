@@ -1,0 +1,11 @@
+React	 <--> 	React-Redux 		<-->	 Redux
+		(gets react and redux
+	  	to work together)
+
+
+npm i redux react-redux
+
+
+
+
+
