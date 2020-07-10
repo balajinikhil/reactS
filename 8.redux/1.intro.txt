@@ -1,0 +1,33 @@
+Redux
+	State Management Library
+	Makes creating complex applications easier
+	Not required to create a react app
+	Not explicitly designed to work with React
+
+Analogy
+	
+Redux Cycle
+	Action Creator => Action => dispatch => Reducers => State
+
+1.Action Creator
+	Function that creates a plain js object has type and payload properites
+	type- change we want to make
+	payload- context around change
+
+2.Action
+	Descirbe some change we want to make
+	
+3.dispatch 
+	Take action and pass to different types
+
+4.reducers
+	function takes action and makes change and update data
+
+5.state
+	Central data created by reducers
+
+
+
+
+	
+	

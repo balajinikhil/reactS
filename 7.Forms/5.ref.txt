@@ -1,0 +1,6 @@
+React Refs
+	Give acess to single DOM element
+	We create refs in the constructor, assign them to instance variable, then pass to a jsx element as prop
+
+In constructor 
+    this.imageRef = React.createRef();
