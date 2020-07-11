@@ -1,11 +1,38 @@
 React	 <--> 	React-Redux 		<-->	 Redux
-		(gets react and redux
-	  	to work together)
+             (gets react and redux
+                 to work together)
 
 
 npm i redux react-redux
 
 
+React-Redux
+	gets react and redux to work together
 
+Redux
+
+Reducers
+-SOng list reducer
+-Selected song reducer
+
+Action Creators
+-Select song
+
+
+		    ________________________
+		    |                      |
+store ----> Provider ---> App ---> connect --> SongList 
+
+Provider 
+Has access to store, Provides data to all the components.
+
+Connect
+communicates with provider using context system, passes data as prop to children
+
+context system
+Allows parent with child even if there is any component is in between them
+
+Action Creators 
+	is connected to CONNECT Component
 
 
