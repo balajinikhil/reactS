@@ -1,0 +1,23 @@
+Wrong 
+	Actions creator must return plain js object with action and payload (async await)
+	By the time our action gets to a reducer, we won't have fetched our data
+
+redux-thunk
+	synchrounus action creator (instantly returns an action with data ready to go)
+	Asynchronus action creator (takes some amt of time for it to get its data ready to go)
+
+Middleware in redux 
+   ActionCreator ---> Action ---> dispatch ---> Middleware --> Reducers --> State
+
+Function that gets called with every action we dispatch
+Has abilitc to STOP, MODIFY or otherwise mess around with actions
+Most popular use of middleware is for dealing with asyn actions
+
+What Redux-thunk does?
+	Rules with redux-thunk
+	Action creators can return action objects
+		OR
+	Action Creators can return functions!
+
+	if we return obj it must have type and optional payload
+	

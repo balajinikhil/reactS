@@ -1,0 +1,42 @@
+Blog project
+
+Absolute understand the purpose of reducers
+API request with Redux
+middleware 'redux-thunk'
+
+App
+	-PostList
+	-UserHeader
+
+JSONPlaceholder API
+
+	jsonplaceholder.typicode.com
+		-Resources
+			/posts
+			/users
+
+npm i redux react-redux axios redux-thunk
+
+redux -> redux library
+react-redux -> integration layer b/w react and redux 
+axios -> help us make network requests
+redux-thunk -> middelware to help us make requests in a redux app
+		
+
+Fetch data to redux
+	Component gets rendered onto the screen
+	Component's componentDidMount lifecycle method will be called
+	We call action creator from componentDidMount
+	Action creator runs code to make an API request
+	API responds with data
+	Action creator returns an action with fetched data on the payload property
+	Some reducer sees the action, returns the data off the payload	
+	Because we generated some new state object, redux/react-redux cause our React app to be rendered
+
+-Components are generally responsible for fetching data they need by calling an action creator
+-Action creators are responsible for making API requests(redux-thunk)
+-We get fetched data component by generating new state in our redux store then getting that throug mapStateToProps
+
+
+
+
