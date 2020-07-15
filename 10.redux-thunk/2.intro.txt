@@ -21,3 +21,20 @@ What Redux-thunk does?
 
 	if we return obj it must have type and optional payload
 	
+
+
+
+=======================================================================
+
+normal action rules
+
+>Action Creater must return an action objects
+>Actions must have a type property
+>Actions can optionally have payload
+
+Rules with redux thunk
+
+>Action Creatos can return action objects
+	OR
+>Action Creators can return functions
+	-If an action object gets returned, it must have a type, optionally payload 

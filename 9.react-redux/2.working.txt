@@ -24,7 +24,7 @@ const actionName = (prop)=>{
 
 Reducers
 
-const reducerName = (list, action){
+const reducerName = (list, action)=>{
 	checkaction type
 	return list with/without modification
 }
