@@ -1,0 +1,34 @@
+react-router
+
+npm i react-router-dom --save
+
+	react-router 		--core navigation lib
+**	react-router-dom 	--navigation for dom-based apps
+	react-router-native	-- navigation for apps
+	react-router-redux 	--bindings between redux and react router (not necessary)
+
+
+import {BrowserRouter, Route } from "react-router-dom"
+
+<BrowserRouter>
+	<div>
+		<Route path="/" exact  component = {reactComp}/>
+		<Route path="/home" component={} />
+	</div>
+</BrowserRouter>
+
+
+1.history -- 
+	Browser router obj looks url in address bar and extracts it and sends it browser router
+
+2.browser router
+	passes history to route component
+
+3.route component
+	compares path and history and renders component
+
+
+note -- single path can be matched by multiple routes
+	
+     -- exact - strict match the route so that the component only renders to it
+	

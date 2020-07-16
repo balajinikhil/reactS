@@ -1,0 +1,6 @@
+Navigate in App
+	
+import {BrowserRouter, Route, Link} from "react-router-dom"
+
+
+<Link to="/" /> (replace <a> tag)
