@@ -1,0 +1,21 @@
+https://github.com/zalmoxisus/redux-devtools-extension
+
+add extension from link
+
+in main index.js 
+
+import {createStore, applyMiddleware, compose}
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducers, composeEnhancers(applyMiddleware()))
+
+
+
+click on extension to activate
+
+
+Debug
+
+localhost:3000?debug_session=<some_string>
+
+saves all data in redux store between refreshes of the page
