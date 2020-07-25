@@ -1,0 +1,20 @@
+Componet Life Cycle Method
+	-constructor
+	-render
+	(content visible on screen)
+	-componentDidMount
+	(sit and wait for updates)
+	-componentDidUpdate
+	(sit and wait until this component is not longer shown)
+	-componentWillUnmount
+
+construtor - good place for lifecycle to do one time setup
+render - returning jsx (avoid doing anything beside)
+componentDidMount -good place to do data loading
+componentDidUpdate - good place to do more data loading when state/props change
+componentWillUnmount - good place to do cleanup (espically for non React stuff)
+
+Other lifecycle methods
+-shouldComponentUpdate
+-getDerivedStateFromProps
+-getSnapshotBeforeUpdate

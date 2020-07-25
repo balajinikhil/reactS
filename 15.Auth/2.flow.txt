@@ -1,0 +1,17 @@
+User's Browser
+
+1. Click Login with google button
+
+2.We use google's js lib to intiate O_Auth process  ---->   3.Google's JS lib makes auth request to Google
+
+                                                            4.Google displays confiramtion screen to a user in popup window
+
+                                                            5. User accepts 
+
+                                                            6.popup window closes
+                                                    <-----        
+7.Google'JS lib invoke a CallBack in our React App
+
+8.CallBack provided with authorization token and profile info for users
+
+

@@ -1,0 +1,20 @@
+naive component approach
+	
+classNames
+	d-ui container comments
+	   d-comment
+		a-avatar
+         img
+	   d-content
+		a-author
+	   	d-metdata
+		  s-date
+		  d-text
+
+faker js
+npm i faker --save
+	
+import faker from 'faker'
+faker.image.avatar()
+
+

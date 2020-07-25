@@ -1,0 +1,8 @@
+Scaffolding
+	
+
+	1./ 		       --> StreamList
+	2./streams/new     --> StreamCreate
+	3./streams/edit    --> Stream Edit
+	4./streams/delete  --> StreamDelete
+	5./streams/show    -->	StreamShow

@@ -1,0 +1,71 @@
+Folder Structure
+	/src
+		/actions -> Action Creators
+		/components  
+		/reducers
+		/index.js ->react and redux config
+
+import actions from '../actions'
+If you don't specify a filename webpack will automatically give us index.js
+
+
+named export 
+allows to us to export multiple functions
+
+
+const actionName = (prop)=>{
+
+	return {
+		type:"TYPE_NAME",
+		payload:{}	
+	}
+	}
+
+
+Reducers
+
+const reducerName = (list, action)=>{
+	checkaction type
+	return list with/without modification
+}
+
+
+import {combineReducers} from 'redux'
+
+combineReducers({
+	key:reducerName,
+	key2:2ndReducerName,
+	})
+
+
+
+//React Redux
+import {Provider} from 'react-redux'
+import {createStore } from 'redux'
+
+import reducers from './reducers'
+
+<Provide store={createStore(reducers)}/>
+
+//import React.Component
+
+import React, {Component } from 'react'
+
+class Name extends Component
+
+//Connect
+import { connect } from 'react-redux'
+
+
+export default connect()(ComponentName)
+
+//config connect func
+	
+const mapStateToProps = (state)=>{
+		return {
+		propName:state.key
+		}
+	}
+	
+	export default connect(mapStateToProps)(ComponentName) 
+

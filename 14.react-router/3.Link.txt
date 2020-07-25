@@ -1,0 +1,25 @@
+Navigate in App
+	
+import {BrowserRouter, Route, Link} from "react-router-dom"
+
+
+<Link to="/" /> (replace <a> tag)
+
+
+Three types of routing 
+
+1.BrowserRouter
+2.HashRouter
+3.MemoryRouter
+
+
+BrowserRouter 
+    -tracks the route change in browser and history of BrowserRouter tacks the changes and updates the component what to render
+
+HashRouter
+    -adds an hash in before specified route, ex- http://www.example.com/#/about,
+    works same as HashRouter.
+
+MemoryRouter
+    -doesnot change anything in url and keeps track of the route and won't show any route
+    

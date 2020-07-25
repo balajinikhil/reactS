@@ -1,0 +1,19 @@
+approval Card
+	d-ui card
+		d-content
+		d-extra content
+			d-ui two buttons
+				d-ui bassic green button
+				d-ui basic red button
+
+
+
+When we want to keep layout and style same for multiple uses and we want to change large content
+we can use props.children
+
+<MainComponent>
+    <childComponent>
+    <childComponent/>
+</MainComponet>
+
+the childComponent will be available inside MainComponent as props.children

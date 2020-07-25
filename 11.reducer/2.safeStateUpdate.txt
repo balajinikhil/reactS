@@ -1,0 +1,29 @@
+Safe state updates
+	
+REMOVING	1.state.pop('hi') ----> state.filter(el => el !== 'hi'
+ADDING		2.state.push('hi) ----> [...state, hi]
+REPLACING	3.state[0] = 'bye' ---> state.map(el => el === 'hi'? 'bye' : el 
+
+UPDATING	1.state.name = 'sam' ---> {...state, name:'sam"}
+ADDING		2.state.age = 30 ---> {...state, age:30 }
+REMOVING	3. delete state.name ---> {...state, age:undefined } 
+
+loadash library 
+_.omit(obj, 'prop')
+	//returns new obj without that property
+
+
+
+switch case inside reducers
+
+	switch(action.type){
+
+	case 'TYPE_NAME':
+		return action.payload
+	
+	default:
+		return state
+	
+	}
+
+

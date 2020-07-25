@@ -1,0 +1,20 @@
+How videostreaming works (ref img)
+
+1. Streaming Computer-- Open Brodcasting Software (OBS)
+
+2.Real time messaging protocol(RTMP) server 
+	--recive incoming feed and brodcast it to viewers
+
+3.viewer's browser
+	--watch stream video
+
+4.Web server that knows which streams are currently broadcasting
+	--which streams are available
+
+App Challenges 
+	--Need to be able to navigate around pages in our app
+	--Need to allow a user to login/logout
+	--Need to handle forms in Redux
+	--Need to master CRUD operations React/Redux
+	--Errors will likely occur! need good error handling
+

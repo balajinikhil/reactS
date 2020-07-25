@@ -1,0 +1,23 @@
+1.Create a new project at console.developers.google.com
+2.Set up an O_Auth confirmaton screen
+3.Generate an O_Auth ClientID
+4.Install google's API library, intialize it with O_Auth ClientID
+5.Make sure the lib get's called any time the user clicks on the "Login with google" button
+
+
+<script src="https://apis.google.com/js/api.js" ></script>
+
+
+ComponentDidMount(){
+
+    window.gapi.load("client:auth2", ()=>{
+
+        window.gapi.client.init({
+            clientId: "<GOOGLE_ID>",
+            scope:"email"
+        })
+    })
+
+
+
+}

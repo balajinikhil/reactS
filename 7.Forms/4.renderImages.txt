@@ -1,0 +1,5 @@
+ImageList
+	Send image in state to component as props
+	map through array and return img tag
+
+Array's must have key when rendering because it will help react to update DOM much faster

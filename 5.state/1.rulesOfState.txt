@@ -1,0 +1,33 @@
+State
+    -React components has a built-in state object. The state object is where you store property values that belongs
+     to the component. When the state object changes, the component re-renders.
+
+
+
+
+Rules Of State
+	-Only usable with class components
+	-You will confuse props with state :(
+	-"State" is a js object that contains some amount of data that is relevant to singular component.
+	-Updating state on a component will cause the component to instantly rerender
+	-State must be intialized when a component is created
+	-State can only be updated using the function "setState"
+
+
+Intialize state
+	-in construtor of class
+	
+
+	class ComponentName extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {key:val}	
+	}	
+	}
+
+i.e super -is a ref to parent's constructor
+	
+
+
+
+

@@ -1,0 +1,10 @@
+Auth Component
+	1.Get a reference to the auth object after it is initialized
+	2.Figure out if the user is currently signed in
+	3.Print the authentication status of the user
+
+	this.auth = window.gapi.auth2.getAuthInstance();
+			this.auth.isSignedIn.get()
+
+
+

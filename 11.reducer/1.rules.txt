@@ -1,0 +1,16 @@
+Rules of reducers
+	1.Must return any value besides "undefined".
+	2.Produces state/data to be used inside of app using only previous state and action.
+	3.Must not reach out of itself to decide what value to return (reducers are pure).
+	4.Must not mutate it's input state argument.
+
+Mutation 
+	Changing the origin value, by adding new values of our own
+	ex- arr.push(val)
+	    obj.prop = val	
+
+note- String and numbers are imutable values
+      === compares value in memory not the value
+
+If we mutate the state the redux can't determine the change and re-render dosen't happen
+

@@ -1,0 +1,43 @@
+Why redux thunk? 
+
+    -- We can't use async functions as action creators because they use switch case syntax and returns an response to get the required fetch of data, 
+
+    --Action creator must only return an js object with type and payload(optional).
+
+    --To overcome this we use a middelware called redux thunk, before dispatch goes to reducer it passes through the middelware
+
+   -->Action --> Action --> dispatch --> middelware --> reducers --> store
+      Creator
+
+    --By using redux-thunk we can either dispatch an obj with type and payload or a function
+
+What happens inside redux thunk ?
+
+    -- redux-thunk checks if the dispatch is an object or a function, 
+    --if it is an object it will be sent to the reducers
+    --if it is a function that function will be invoked with dispatch and a new action will be created and will be sent to dispatch manually
+
+**RULES OF REDUCERS
+
+    --must return any value besides undefined
+    --must produce state/data using previous state or action only
+    --must not reach out to any external variables to decide what to return must be a pure function
+    --must not mutate the previous state should always return new value/unchanged previous state
+
+first time reudcer is called it is has a state of undefined so we must set it to a default value
+since we can't mutate state we have to use a work around
+
+=== in non primitive datatypes check for the memory of the variable not the val so by application of redux source code if we mutate the state, it won't matter because memory will be the same so the application won't know whether the state has changed or not, this won't rerender the component.
+It is required we return new arr or obj so that the rerender happens, we can do that by using SAFE STATE UPDATE methods
+
+
+**SAFE STATE UPDATE
+arr.push(val) ---> [...arr, val]
+arr.unshift(val) --> [val, ...arr]
+delete arr elements --> arr.filter(e=> e !== val)
+replacing ---> arr.map((e)=> e===val ? new : val )
+
+
+replacing val obj --> {...obj, name:val}
+obj.adding = val --> {...obj, adding:val}
+delete val in obj --> {...obj, val:undefined} OR _.omit(obj, 'prop')

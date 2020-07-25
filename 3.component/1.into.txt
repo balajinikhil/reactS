@@ -1,0 +1,22 @@
+Component
+    Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class or function that optionally accepts inputs i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
+
+
+component nesting - A component can be show inside of another
+component reusability - We want to make components that can be easily reused through out application
+componet configuration - we should be able to confiugre a component when it created
+
+CSS?
+semantic-ui.com - OS CSS library
+	-Views
+	-comments
+
+semantic ui cdn - search
+cdnjs###.com
+	semantic.min.css
+
+
+public
+	index.html
+	css cdn paste
+

@@ -1,0 +1,54 @@
+Unsplash API
+	unsplash.com/developers
+	-signup
+
+Your apps
+	-New Application
+	-accept rules
+	-Application Name
+	-Description
+	
+	-Keys
+	Access Key
+	Screte key
+
+	-Documentation
+   Schema - location - url	
+   Authorization - header or querystring
+
+
+AJAX Client
+	React App - AJAX Client ----------> Unsplash api
+				<----------
+
+
+To make request 1.axios (3rd party package)
+		2.fetch (function built into modren browsers)
+
+npm i axios --save
+import axios from 'axios'
+
+Making Request
+
+	axios.get('url', {
+	params:{
+		query:term
+	},
+	headers:{
+		Authorization:"Client-ID ACESS KEY"
+	}
+	})
+
+Geting Data
+	1.Promise - chain .then() 
+	2.async await
+
+
+
+Refactor API
+	axios.create({
+		baseURL:"url"
+		headers:{
+			Authorization:'Client-ID '
+			}
+	})

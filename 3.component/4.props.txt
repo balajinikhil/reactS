@@ -1,0 +1,21 @@
+
+App - parent component
+CommentDetail - child component
+
+
+Props (properties)
+System for passing data from parent componet to a child component
+Goal is to customize or config child component
+Child can't pass info to parent using props
+
+
+Providing props from parent to child
+	<CommentDetail nameOfProp = "value" />
+
+In child
+	const componentName = (props)=>{
+		props.property
+	}
+
+Changing attribute using props
+Parent <ComponentName avatar={js code} />

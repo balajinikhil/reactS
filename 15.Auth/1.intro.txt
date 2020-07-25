@@ -1,0 +1,29 @@
+Google O_Auth 2.0 flow
+
+login with google ---> accept 
+
+Types of Authentication
+
+    1.Email/Password Authentication
+        -We store a record in DB with user's email and Password
+        -WHen the user tries to login we compare email/pwd with stored in DB
+        -A user is logged in when they enter correct email/pwd
+    
+    2.O_Auth Authentication
+        -User authenticates with outside service provider
+        -User authorises our app to access their information
+        -Outside provider tell us about the user
+        -We are trusting the outside provider to correctly handel identification of user
+        -O_Auth can be used for (1) User identification in our app (2) our app making actions on behalf of user
+
+Different O_Auth
+
+    1. O_Auth for servers
+        -Result in a token that server can use to make request on behalf of user
+        -Usually used when we have an app that needs to access user data when they are not logged in
+        -Difficult to setup because we need to store a lot of info about the user
+
+    2.O_Auth for JS Browser Apps
+        -Result in token that a Browser app can use to make request on behalf of the user
+        -Usually used when we have an app that only needs to access user data while they are logged in
+        -Very easy to setup thanks to google's js lib to automate the flow 

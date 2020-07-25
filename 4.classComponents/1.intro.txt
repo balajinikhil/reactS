@@ -1,0 +1,6 @@
+Functional Component - good for simple content
+Class Component - for complex content
+
+Class component - easier code organization
+		- can use state system - easier to handel user input 
+		- understands lifecycle events - easier to do things when the app first starts

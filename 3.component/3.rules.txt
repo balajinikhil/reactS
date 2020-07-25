@@ -1,0 +1,8 @@
+Creating Reusable Component
+
+1. identify jsx repeated
+2. descriptive name
+3. create new file to place the component with same name (inside Src dir)
+4. create a new component inside file
+5. make new component is configurable by using React "props" system.
+

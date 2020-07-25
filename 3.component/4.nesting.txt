@@ -1,0 +1,12 @@
+Component Nesting
+
+Must export componet inorder to use it in index by importing it.
+
+export default ComponentName
+
+import VariableName from "./ComponentName"
+
+webpack finds file ending in js 
+
+<ComponentName/> inside jsx
+
