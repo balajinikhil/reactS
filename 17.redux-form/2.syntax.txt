@@ -1,0 +1,17 @@
+import { reducer as formReducer } from "redux-form"
+
+must be assigned to form in redux store
+
+import {Field, reduxForm } fom 'redux-form';
+
+
+render(){
+	return (
+		<form>
+			<Field name="nameOfProperty" component={} label="" />
+		</form>
+
+export default reduxForm({ form: "nameOfForm" })(componentName);
+
+
+<input {...prop.input}/>
