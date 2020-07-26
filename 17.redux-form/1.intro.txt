@@ -1,0 +1,24 @@
+Create StreamCreate
+
+Redux Form
+-npm i redux-form
+
+
+BEHIND THE SCENES
+
+DOM
+i/p ele | value <---- props <---- reduxForm(mapStateToProps) <--- Redux Store
+	| onChange ---> handler --> reduxForm(action creator) ---> redux form reducer
+
+DOCUMENTATION
+https://redux-form.com/8.3.0/   --> example
+
+CONNECTING redux-form
+
+import { reducer as formReducer } from 'redux-form'
+
+combineReducers({
+form:formReducer
+})
+
+
