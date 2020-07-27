@@ -1,0 +1,34 @@
+redux-form
+npm i --save redux-form
+
+what we date
+Class Component     DOM
+state ------------> value
+setState ---------> onChange
+
+with redux we store data in redux store
+
+redux-form
+	-handling inputs with redux form
+
+redux store
+
+(automated using redux form)
+(redux form  ---> mapStateToProps ---> Props ---> values 
+reducer)   <------formActionCreator<------handler <---onChange
+
+https://redux-form.com
+examples
+
+Setup
+
+reducers/index.js
+
+import {reducer as formReducer} from 'redux-form'
+
+export default combineReducers({
+form:fromReducer
+}) 
+
+
+

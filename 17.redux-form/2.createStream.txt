@@ -1,0 +1,28 @@
+streamCreate
+
+import {Field, reduxForm} from 'redux-form';
+Field -reactComponent
+reduxForm - function 
+
+i.e similar to connect()(componentName)
+
+export default reduxForm({
+form:"nameOfTheForm"
+})(componentName)
+
+
+<Field name=" " /> 
+name - same as input name 
+field requires a component, component contains type of input element, can be a func or class
+
+<Field name="" component={this.inputComp} />
+
+this.inputComp will be called with a props of its own, we have to take and wireup value and onChange to input element using these props
+
+<input onChange={props.input.onChange} value={props.input.value}/>
+ 
+to wire all the props
+
+(props)=>{
+	<input {...props.input} /> //all the properties will be linked
+}
