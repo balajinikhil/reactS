@@ -1,0 +1,5 @@
+1.Form is initially rendered or user interacts with the form
+2.validate(formValues)
+3.Did user enter valid inputs
+	YES - return an empty oject
+	NO - return an object 

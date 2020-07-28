@@ -1,0 +1,116 @@
+Redux form
+    We use component level state to keep track of the form values,
+    In order for the redux state to hold the values of the form we should do following
+    1. actionCreatore - we must have an action creator which updates the state on every change in input of the form
+    2.reducers - we must have a reducer which holds the state changed values
+
+    ex - <input  value={this.props.formValue} onChange={this.props.actionCreator} />
+
+redux-form helps us to automate this process 
+
+npm i redux-form --save
+
+In reducers index.js
+    We have to hook up the redux-form to reducers so that the values of the forms will be stored in redux state
+
+
+    import {reducer as formReducer} from "redux-form"
+
+    export default combineReducers({
+        form:formReducer
+    })
+
+Now we have created a store which keeps track of our form
+
+In Form component
+    
+    import {Field, reduxForm} from 'redux-form'
+
+    --Field - is a react component which handels all the input related stuff
+    --reduxForm - is just like connect which connects our Component to reducer
+
+    <Field name="nameOfiptField"  props="value" component={reactComponent}/>
+
+        --field has a name property which is equivelent to the input name property
+        --if we want to pass additional props to the react component we can pass it as attribute which will be availabe in input as property
+
+    working example
+
+    class App extends React.Component{
+
+        renderInput = ({input, label }) =>{
+            //we can destructure input from the props 
+
+            //props will have access all the input values which will be sent by Field component
+
+            <label>{label}</label>
+            <input type="text" value={input.value} onChange={input.onChange}/>
+
+            //instead of assigning each values 
+
+            <input {...input} />
+
+
+            //by adding these two property we will be updating the reducer every we type something 
+        }
+
+        renderForm = ()=>{
+            return (
+                <form>
+                    <Field name="title" component={this.renderInput} label/>
+                </form>
+            )
+        }
+
+        render(){
+            return(
+                <div>{renderForm()}</div>
+            )
+        }
+    }        
+
+    export default reduxForm({
+        form:"nameOfForm",
+    })(ourComponent)
+
+HANDALING SUBMIT
+    redux-form offers a prop which can handel submit
+    this.props.handelSubmit() accepts a function which we can use to do stuff with form data
+    handelSubmit does prevent default and passes the values of input to the argument function
+
+    <form onSubmit={this.props.handelSubmit(this.ourSubmit)} ></form>
+
+    ourSubmit(val){
+        holds the input value as object with field name as key and value
+    }
+
+
+VALIDATION
+    we don't want to submit empty object so we can have validation function which validates the form values
+
+    redux-form has a validation method
+
+    export default reduxForm({
+        form:"nameOfForm",
+        validate
+    })(ourComponent)
+
+    this validate function will get props with form input values
+
+    the validate function must be outside class component
+
+    if there is no error we return an empty object, if there are errors we return object with field name as key and error message as description
+
+    const validate = (val)=>{
+        const errors = {}
+        if(!val.prop){
+            //prop will be the name of the field tag
+            error.fieldName = "error message"
+        }
+        return errors
+    }
+
+    The errors which are returned will be availabe in input component given to input field as meta 
+    in meta tag meta.error will contain error of particular 
+
+

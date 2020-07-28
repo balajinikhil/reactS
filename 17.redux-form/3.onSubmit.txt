@@ -1,0 +1,8 @@
+For submitting
+
+on <form> tag
+onSubmit={this.props.handelSubmit(this.props.ourSubmitHandler)}
+
+ourSubmit(formValues){
+	//formValues consits of form's value
+}
