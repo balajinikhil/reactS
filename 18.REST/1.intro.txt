@@ -1,0 +1,28 @@
+CreateStream
+	npm i json-server --save
+
+REST Conventions
+	Set of predined system that defines how the api renders data
+
+db.json
+	{
+		"streams":[]
+	}
+
+package.json
+
+	scripts:
+		start:"json-server -p 3001 -w db.json"
+
+keyinterploaton	
+	{...obj, [key]:prop}
+	in order for us add key dynamically we can use obj interpolation
+
+_.mapKeys(arr, val)
+	takes in array and creates an object using val as the key
+
+_.omit(obj, key)
+	takes in an object and deletes the key and return a new object
+
+Object.values(obj)
+	takes all the object values and makes it an array
