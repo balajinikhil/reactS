@@ -1,0 +1,13 @@
+URL based selection
+
+	Selection Reducer -- when a user clicks on a stream to edit it, use a 'selectionReducer' to record what stream is being edited
+
+	URL-based selection - put the ID of the stream being edited in the URL
+
+Dynamic routing
+	pass id as params
+	/streams/edit/${id} --Link
+	/streams/edit/:anythin --Route
+
+props will have access to the url
+	-match-parmas

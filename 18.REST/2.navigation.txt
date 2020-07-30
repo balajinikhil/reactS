@@ -1,0 +1,26 @@
+Types of navigation
+
+-intentional navigation(user clicks on a link component)
+-Programmatic navigation(we run code to forcibly navigate the user through our app)
+
+historry - obj keeps track of address in our browser
+BrowserRouter - listens to history for changes to the URL
+
+only components of Route will have acess to history object so if we want to make changes to it outside the route component 
+we have to pass it as parameter to that obj.
+
+we can create our own history object and plain router and control the changes in the history 
+
+
+src
+	-history.js
+
+import { createBrowserHistory } from 'history'
+
+export default createBrowserHistory()
+
+replace BrowserRouter with Router 
+
+
+history.push("/route") --to make navigate 
+
