@@ -1,0 +1,38 @@
+component isolation
+	
+	1.user types url 
+	2.user loads up our app
+	3.redux state obj is empty
+	4.we try to select stream with id '3' from state
+	5. no stream were loaded so we get undefined 
+	6.we navigate to "/"
+	7.StreamList fetches all of our streams, updates Redux 	state
+	8.we navigate back to "/streams/edit/3"
+	9.we select stream with id of 3
+	10.data is now in redux store so we see the appropriate stream
+
+
+React-Router, each component needs to be designed to work in isolation(fetch its own data!)
+
+
+setIntitial value
+	
+	1.StreamEdit
+		-onSubmit
+		-intialValue
+	2.ReduxForm
+	(StreamForm)
+
+--StreamCreate
+import editStream from actions
+onSubmit=>log(val)
+
+reduxForm wrapped StreamForm	
+
+<StreamForm intialValues={obj} />
+obj contains intial values with key as name and value as property.
+
+_.pick(obj, 'key') //this picks the particular key and value and return new obj with only those fields
+
+  
+
