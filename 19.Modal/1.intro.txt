@@ -1,0 +1,27 @@
+z-index
+	css rule what gets rendered on top of another
+	heigher z-index value the top element will be
+
+stackingContext
+
+portal 
+	allows us to render some element not as the direct child 
+	but someother element inside component
+
+
+
+portal 
+	get a element not render as direct child of a component 
+	instead render as seperate element
+
+ReactDOM.createPortal(
+<JSX>,
+document.selector(val)
+)
+
+e.stopPropogation()
+
+React.Fragment 
+	jsx looking element to wrap the div but dosen't get rendered to html
+	<React.Fragment>
+	<React.Fragment/>
